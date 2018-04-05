@@ -72,6 +72,7 @@ if ((board[0][0] == 'X' && board[1][0] == 'X' && board[2][0] == 'X') || (board[0
         {
             winner = 'X';
             playing = false;
+            cout<<"Winner is " << winner << endl; 
         }
   if ((board[0][0] == 'O' && board[1][0] == 'O' && board[2][0] == 'O') || (board[0][0] == 'O' && board[0][1] == 'O' && board[0][2] == 'O' ) || ( board[1][0] == 'O'
     && board[1][1] == 'O' &&board[1][2] == 'O' ) || ( board[2][0] == 'O' && board[2][1] == 'O'  && board[2][2] == 'O' ) ||
@@ -80,11 +81,11 @@ if ((board[0][0] == 'X' && board[1][0] == 'X' && board[2][0] == 'X') || (board[0
           {
               winner = 'O';
                   playing = false;
+              cout<< "Winner is " << winner << endl; 
           }//1-B. Display an newline to move to the next row of the board
     
   }while( playing );
- 
-  cout<<"Winner is " <<winner<<endl; 
+   
   cout<<"Goodbye!\n";
 
   return 0;
